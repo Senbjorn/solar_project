@@ -54,7 +54,7 @@ def scale_y(y):
     **y** — y-координата модели.
     """
 
-    return int(window_height - y) * scale_factor + window_height // 2 # FIXME: not done yet
+    return window_height // 2 - int(y * scale_factor) # FIXME: not done yet
 
 
 def create_star_image(space, star):
