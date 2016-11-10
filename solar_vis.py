@@ -80,8 +80,8 @@ def create_planet_image(space, planet):
     **space** — холст для рисования.
     **planet** — объект планеты.
     """
-    x = scale_x(star.x)
-    y = scale_y(star.y)
+    x = scale_x(planet.x)
+    y = scale_y(planet.y)
     r = planet.R
     planet.image = space.create_oval([x - r, y - r], [x + r, y + r], fill=planet.color)
 
